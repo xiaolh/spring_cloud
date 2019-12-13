@@ -1,6 +1,6 @@
-package com.cloud.user.controller;
+package com.cloud.user_ribbon.controller;
 
-import com.cloud.user.service.UserService;
+import com.cloud.user_ribbon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("user")
 public class UserController {
 
-    @Autowired UserService userService;
+    @Autowired
+    private UserService userService;
 
     @GetMapping("test")
     public String userTest(){

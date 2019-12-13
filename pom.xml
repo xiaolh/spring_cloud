@@ -10,8 +10,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>user</module>
+        <module>user_ext</module>
         <module>eureka</module>
-        <module>user_copy</module>
+        <module>user_ribbon</module>
+        <module>common</module>
+        <module>user_ext</module>
     </modules>
 
     <parent>
@@ -40,6 +43,12 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.0.7</version>
+        </dependency>
+        <!-- common -->
+        <dependency>
+            <groupId>com.cloud</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

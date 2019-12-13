@@ -1,4 +1,4 @@
-package com.cloud.user;
+package user_ext;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,10 +1,10 @@
-package user_ext.controller;
+package com.cloud.user_feign.controller;
 
+import com.cloud.user_feign.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import user_ext.service.UserService;
 
 /**
  * @author xiaolh
@@ -15,7 +15,7 @@ import user_ext.service.UserService;
 public class UserController {
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @GetMapping("test")
     public String userTest(){

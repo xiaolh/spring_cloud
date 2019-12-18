@@ -15,6 +15,7 @@
         <module>user_ribbon</module>
         <module>common</module>
         <module>user_ext</module>
+        <module>user_feign</module>
     </modules>
 
     <parent>
